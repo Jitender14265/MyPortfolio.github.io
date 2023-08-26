@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/b486158798.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.jpg" alt=" " class="logo" />
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact us</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="headertext">
+        <h3>Hi! I am &nbsp; <span> Jitender</span> <br> <br> A Java developer With a deep understanding of Java's
+          capabilities,
+          I've
+          embarked on projects that span web development, standalone applications, and backend systems. Through my work,
+          I aim to blend technical excellence with creative problem-solving, creating software that not only functions
+          seamlessly but also delivers meaningful experiences.</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABout Section -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="images/WhatsApp Image 2023-08-26 at 5.41.51 PM.jpeg" alt="Unable to load" />
+        </div>
+        <div class="col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+
+            I am a skilled and enthusiastic Computer Science and Engineering graduate. With a solid foundation in
+            programming, data structures, and algorithms, I've brought innovative solutions to various projects. My
+            portfolio reflects my expertise in software development, web technologies, and machine learning. Eager to
+            tackle complex problems and continuously learn in the ever-evolving tech landscape
+          </p>
+          <div class="tab-links">
+            <p class="tab active-tab" onclick="opentab('skills')">Skills</p>
+            <p class="tab 2" onclick="opentab('Education')">Education</p>
+            <p class="tab 3" onclick="opentab('Experience')">Experience</p>
+          </div>
+          <div class="tab-contain active" id="skills">
+            <ul>
+              <li>
+                <span>Web Development</span> <br />
+                Desingning web Application And Responsive websites
+              </li>
+              <li>
+                <span>Stand Alone Application</span> <br />
+                Developing Stand alone Application with Interactive User Interface
+              </li>
+              <li><span>Database </span> <br />
+                Good Command on SQL And My SQL Database Platforms</li>
+
+              <li><span>Coding </span> <br />
+                Good Knowledge of Data Structure And Algorithms</li>
+            </ul>
+          </div>
+          <div class="tab-contain" id="Education">
+            <ul>
+              <li>
+                <span>10 + 12</span> <br />
+                I got 87% in My 12th Exam in CBSE Bord
+              </li>
+              <li>
+                <span>Degree</span> <br />
+                Currently Studying in Btech Computer Science in MDU Rohtak
+              </li>
+
+          </div>
+          <div class="tab-contain" id="Experience">
+            <ul>
+              <li>
+                <span>Fresher</span> <br />
+                I develop Stand Alone Application Of Library Mangemnet System
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------services----------------------------------------------------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Front End Developer</h2>
+          <p>
+            Creating Front-end involves designing and building the visual and interactive aspects of websites and web
+            applications using HTML ,CSS And Javascript
+          </p>
+          <a href="https://github.com/Jitender14265" target="_blank">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Java Developer</h2>
+          <p>
+            Developing Java Based Stand Alone Applications
+          </p>
+          <a href="https://github.com/Jitender14265" target="_blank">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Stand Alone Application</h2>
+          <p>
+            Creating Powerful Stand Alone Applications With User Friendly Interface to interact with Application And
+            Feature
+          </p>
+          <a href="https://github.com/Jitender14265" target="_blank">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------Portfolio--------------------------------------------------------------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+
+      <div class="worklist">
+        <div class="work">
+          <img src="images/2download.jpg" alt="#" />
+          <div class="layer">
+            <h3>Weather Application</h3>
+            <p>
+              MyWeatherPal is a standalone weather application built using HTML, CSS, and JavaScript. The application
+              provides real-time weather updates based on user-selected locations.It Designe is responsive and intuitive
+              interface to ensure easy navigation .Integrated the OpenWeatherMap API to fetch weather data based on
+              user-inputted locations
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/coffeeshop-desktop-screen.png" alt="#" />
+          <div class="layer">
+            <h3>Cafe Mangement System</h3>
+            <p>
+              JavaFX and SQL-powered Cafe Management System portfolio, showcasing my proficiency in building interactive
+              user interfaces, robust backend database integration, and efficient data management. Illustrates my
+              ability to create a seamless cafe management solution that encompasses order processing, inventory
+              control, and customer engagement.
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/LibraryMangement.png" alt="#" />
+          <div class="layer">
+            <h3>Library Mangement System</h3>
+            <p>
+              LibraSys is a standalone Library Management System developed using Java and MySQL.
+              Implemented a secure login system for librarians and patrons, ensuring role-based
+              access to different features.
+              Enabled patrons to borrow and return books seamlessly, updating availability status in real time.
+              Integrated search functionality to allow users to easily locate books by title, author, or genre.
+              Generated reports on book circulation, overdue items, and patron history to aid library management.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Jitender14265" target="_blank" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------------------COntact us----------------------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <a href="Jitender02020@gmail.com"><i class="fas fa-paper-plane"></i>Jitender02020@gmail.com</a>
+          </p>
+          <p><i class="fas fa-phone-square-alt"></i>8700697086</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jitender-jitender-97164922a/"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/MyResume.pdf" download class="btn btn2">Download</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Mail" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"> </span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &nbsp;<i class="fa-regular fa-copyright c"></i> &nbsp;by
+        Jitender Made with<i class="fa-solid fa-heart"></i>
+      </p>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzA6XeWNnfVEmIpT0_sZCs8UGR1EuDkc47w9Jop-nt2KuSiP4CkpVSXmAim1Gl9I7KMVg/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message Sent Successfully";
+          setTimeout(() => {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+
+</html>
